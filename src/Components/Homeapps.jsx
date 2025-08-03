@@ -31,6 +31,15 @@ export default function Homeapps() {
         { title: "PLANT B", image: b },
         { title: "PLANT C", image: c },
         { title: "PLANT D", image: d },
+        { title: "PLANT A", image: a },
+        { title: "PLANT A", image: a },
+        { title: "PLANT B", image: b },
+        { title: "PLANT C", image: c },
+        { title: "PLANT D", image: d },
+        { title: "PLANT A", image: a },
+        { title: "PLANT B", image: b },
+        { title: "PLANT C", image: c },
+        { title: "PLANT D", image: d }
     ];
 
     return (
