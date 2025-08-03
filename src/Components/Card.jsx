@@ -45,32 +45,52 @@ export default function Card() {
 
 
     return (
+        //<>
+        //    <SideBar show={slideRight} />
+
+        //    {/*Whole Container*/}
+        //    <div className={` relative h-screen w-full overflow-hidden ${slideRight ? 'slide-right' : 'slide-left'} transition-all duration-300 ease-in-out`} id="main-container">
+
+        //        {/*Navbar*/}
+        //        <Navbar onLeftClick={HandleSlideRight} />
+        //        {/*Navbar*/}
+
+
+        //        {/*Homeapps*/}
+        //        <div className="py-16 h-full overflow-y-auto"> {/* Padding to prevent overlap */}
+        //            <Homeapps />
+        //            <Homeapps />
+        //        </div>
+        //        {/*Home*/}
+
+
+        //        {/*Bottom menu Bar*/}
+        //        <Bottomenu />
+        //        {/*Bottom menu Bar*/}
+
+        //    </div>
+        //    {/*Whole Container*/}
+
+        //</>
         <>
             <SideBar show={slideRight} />
 
-            {/*Whole Container*/}
-            <div className={`relative h-screen w-full overflow-hidden ${slideRight ? 'slide-right' : 'slide-left'} transition-all duration-300 ease-in-out`} id="main-container">
+            {/* Whole App Container */}
+            <div className={`relative w-full h-screen overflow-hidden ${slideRight ? 'slide-right' : 'slide-left'} transition-all duration-300 ease-in-out`} id="main-container">
 
-                {/*Navbar*/}
+                {/* Fixed Navbar */}
                 <Navbar onLeftClick={HandleSlideRight} />
-                {/*Navbar*/}
 
-
-                {/*Homeapps*/}
-                <div className="py-16 h-full overflow-y-auto"> {/* Padding to prevent overlap */}
+                {/* Scrollable Content Area */}
+                <div className="pt-16 pb-16 h-full overflow-y-auto">
                     <Homeapps />
                     <Homeapps />
                 </div>
-                {/*Home*/}
 
-
-                {/*Bottom menu Bar*/}
+                {/* Fixed Bottom Menu */}
                 <Bottomenu />
-                {/*Bottom menu Bar*/}
-
             </div>
-            {/*Whole Container*/}
-
         </>
+
     )
 }

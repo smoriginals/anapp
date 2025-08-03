@@ -42,11 +42,11 @@ export default function SideBar({ show }) {
                     initial={{ x: '-100%' }}
                     animate={{ x: 0 }}
                     exit={{ x: '-100%' }}
-                    transition={{ duration:0.3 }}
-                    className='absolute left-0 top-0 h-screen w-full overflow-hidden bg-blue-500 flex justify-start items-center'
+                    transition={{ duration:0.4 }}
+                    className='absolute left-0 top-0 h-screen w-full overflow-hidden bg-white flex justify-start items-center'
                 >
                     {/* Links Container */}
-                    <div className='m-2 h-[75%] w-4/6 overflow-hidden bg-yellow-500'>
+                    <div className='m-2 h-[75%] w-4/6 overflow-hidden bg-white'>
                         <div className='grid grid-cols-1 gap-4 p-4'>
                             {links.map((text, index) => (
                                 <motion.a
