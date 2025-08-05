@@ -57,7 +57,7 @@ export default function Card() {
 
 
                 {/*Homeapps*/}
-                <div className="py-16 h-full overflow-y-auto"> {/* Padding to prevent overlap */}
+                <div className="h-full overflow-y-auto py-16"> {/* Padding to prevent overlap */}
                     <Homeapps />
                     
                 </div>

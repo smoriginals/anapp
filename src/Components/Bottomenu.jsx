@@ -8,22 +8,22 @@ import '../index.css'; // Assuming you have a global CSS file for styles'
 export default function Bottomenu() {
     return (
         <>
-            <div className='border border-solid border-gray-200 flex fixed bottom-0 left-0 h-16 w-full items-center justify-between bg-white px-2 z-50'>
-                <div className='h-[50px] w-[50px] rounded-full  flex flex-nowrap justify-center items-center'>
-                    <AiFillHome src={AiFillHome} alt="Home Icon" className='text-gray-500 text-2xl object-cover rounded-full animeate hover:text-cyan-500' />
+            <div className='fixed bottom-0 left-0 z-50 flex h-16 w-full items-center justify-between bg-gray-100 px-2'>
+                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
+                    <AiFillHome src={AiFillHome} alt="Home Icon" className='animeate rounded-full object-cover text-2xl text-gray-500 hover:text-cyan-500' />
                 </div>
                     
-                <div className='h-[50px] w-[50px] rounded-full  flex flex-nowrap justify-center items-center'>
-                    <FaHeart src={FaHeart} alt="Heart Icon" className='text-gray-500 text-2xl object-cover rounded-full animeate hover:text-cyan-500' />
+                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
+                    <FaHeart src={FaHeart} alt="Heart Icon" className='animeate rounded-full object-cover text-2xl text-gray-500 hover:text-cyan-500' />
                 </div>
-                <div className='h-[50px] w-[50px] rounded-full  flex flex-nowrap justify-center items-center'>
-                    <LuLoaderPinwheel src={LuLoaderPinwheel} alt="Explore Icon" className='text-orange-500 text-4xl object-cover rounded-full animeate hover:text-cyan-500' />
+                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
+                    <LuLoaderPinwheel src={LuLoaderPinwheel} alt="Explore Icon" className='animeate rounded-full object-cover text-4xl text-orange-500 hover:text-cyan-500' />
                 </div>
-                <div className='h-[50px] w-[50px] rounded-full  flex flex-nowrap justify-center items-center'>
-                    <IoCartOutline src={IoCartOutline} alt="Cart Icon" className='text-gray-500 text-2xl object-cover rounded-full animeate hover:text-cyan-500' />
+                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
+                    <IoCartOutline src={IoCartOutline} alt="Cart Icon" className='animeate rounded-full object-cover text-2xl text-gray-500 hover:text-cyan-500' />
                 </div>
-                <div className='h-[50px] w-[50px] rounded-full  flex flex-nowrap justify-center items-center'>
-                    <FaUser src={FaUser} alt="USer Icon" className='text-gray-500 text-2xl object-cover rounded-full animeate hover:text-cyan-500' />
+                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
+                    <FaUser src={FaUser} alt="USer Icon" className='animeate rounded-full object-cover text-2xl text-gray-500 hover:text-cyan-500' />
                 </div>
             </div>
         </>
