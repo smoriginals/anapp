@@ -1,9 +1,21 @@
-﻿import React, { useEffect, useState } from 'react';
+﻿import { Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Bottomenu from '../Components/Bottomenu';
 import Homeapps from '../Components/Homeapps'; // Import Homeapps component directly for simplicity
 import SideBar from './Sidebar';
 import '../index.css'; // Assuming you have a global CSS file for styles'
+
+
+import Products from '../Pages/products';
+import Services from '../Pages/services';
+import Category from '../Pages/category';
+import Cart from '../Pages/cart';
+import Orders from '../Pages/orders';
+import Account from '../Pages/account';
+import Contact from '../Pages/contact';
+import About from '../Pages/about';
+import Logout from '../Pages/logout';
 
 export default function Card() {
 
@@ -58,8 +70,18 @@ export default function Card() {
 
                 {/*Homeapps*/}
                 <div className="h-full overflow-y-auto py-16"> {/* Padding to prevent overlap */}
-                    <Homeapps />
-                    
+                    <Routes>
+                        <Route excat path="/" element={<Homeapps />} />
+                        <Route excat path="/products" element={<Products />} />
+                        <Route excat path="/Services" element={<Services />} />
+                        <Route excat path='/category' element={<Category />} />
+                        <Route excat path='/cart' element={<Cart />} />
+                        <Route excat path='/orders' element={<Orders />} />
+                        <Route excat path='/account' element={<Account />} />
+                        <Route excat path='/contact' element={<Contact />} />
+                        <Route excat path='/about' element={<About />} />
+                        <Route excat path='/logout' element={<Logout />} />
+                    </Routes>
                 </div>
                 {/*Home*/}
 
