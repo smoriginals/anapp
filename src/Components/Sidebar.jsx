@@ -30,7 +30,7 @@ export default function SideBar({ show }) {
                     className='fixed h-dvh w-dvw flex justify-start items-center bg-white z-0'
                 >
                     {/* Links Container */}
-                    <div className='h-4/5 w-3/5 rounded-r-xl bg-red-200 py-4'>
+                    <div className='h-4/5 w-3/5 md:w-1/5  rounded-r-xl bg-red-200 py-4'>
                         <div className='grid grid-cols-1 gap-4 p-4'>
                             {links.map((link, index) => (
                                 <Link key={link.name} to={link.path}>

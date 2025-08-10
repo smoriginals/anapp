@@ -1,20 +1,29 @@
-﻿import React from 'react';
-import '../index.css';
+﻿import React, { useState } from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 import { AiOutlineBars } from 'react-icons/ai';
-const Navbar = React.memo(function Navbar({ onLeftClick }) {
+import '../index.css';
+
+export default function Navbar({ onLeftClick, isToggled }) {
+    const [showSearch, setShowSearch] = useState(false);
     return (
         <>
-            <div className='fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-gray-100 px-3 shadow-lg'>
-                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-lg' onClick={onLeftClick}>
-                    <AiOutlineBars className='animeate rounded-full text-4xl text-black hover:text-cyan-600' />
+            <div className={`fixed left-0 top-0 z-50 ${isToggled ? 'rounded-t-xl' : 'rounded-none'} flex h-16 w-full items-center justify-between bg-gray-100 px-3 shadow-lg anime`}>
+
+
+                <div className='flex  items-center justify-center ' onClick={onLeftClick}>
+                    {isToggled ? <AiOutlineBars className='anime opacity-0 md:opacity-100' /> : <AiOutlineBars className='anime md:opacity-100 opacity-100 rounded-full text-4xl text-black hover:text-cyan-600' />}
                 </div>
-                <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-lg'>
-                    <BiSearchAlt className='animeate rounded-full text-4xl text-black hover:text-cyan-600' />
+
+
+                <div className='flex  items-center justify-center'>
+                    {isToggled ? <BiSearchAlt className='anime invisible' /> : <BiSearchAlt className="rounded-full text-4xl text-black hover:text-cyan-600 cursor-pointer" onClick={() => setShowSearch(prev => !prev)}
+                    />}
+
+                    <input type="search" placeholder="Search..." className={`ml-2 h-10 rounded-lg border border-gray-300 ${showSearch?'px-3':'px-0'} focus:outline-none focus:ring-2 focus:ring-cyan-600 transition-all duration-300 ease-in-out ${showSearch ? 'w-64 opacity-100' : 'w-0 opacity-0 overflow-hidden border-0 px-0'} `}
+                    />
                 </div>
             </div>
         </>
     )
-})
+}
 
-export default Navbar;
