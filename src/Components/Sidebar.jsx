@@ -7,15 +7,13 @@ export default function SideBar({ show }) {
 
     const links = [
         {name:'Home',path:'/'},
-        {name:'Products',path:'/products'},
+        {name:'Shop',path:'/shop'},
         {name:'Services',path:'/services'},
-        {name:'Categorys',path:'/category'},
         {name:'Cart',path:'/cart'},
         {name:'Orders',path:'/orders'},
-        {name:'Account & Profile',path:'/account'},
+        {name:'My Account',path:'/account'},
         {name:'Contact Us',path:'/contact'},
         {name:'About',path:'/about'},
-        {name:'Log Out',path: '/logout' }
     ];
 
     return (

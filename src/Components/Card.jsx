@@ -10,15 +10,13 @@ import '../index.css'; // Assuming you have a global CSS file for styles'
 import LoadingBar from 'react-top-loading-bar'; // Importing LoadingBar for loading indication
 
 
-import Products from '../Pages/products';
+import Shop from '../Pages/shop';
 import Services from '../Pages/services';
-import Category from '../Pages/category';
 import Cart from '../Pages/cart';
 import Orders from '../Pages/orders';
 import Account from '../Pages/account';
 import Contact from '../Pages/contact';
 import About from '../Pages/about';
-import Logout from '../Pages/logout';
 
 export default function Card() {
 
@@ -105,15 +103,13 @@ export default function Card() {
                 <div className="h-full overflow-y-auto py-12"> {/* Padding to prevent overlap */}
                     <Routes>
                         <Route path="/" element={<Homeapps />} />
-                        <Route path="/products" element={<Products />} />
-                        <Route path="/Services" element={<Services />} />
-                        <Route path='/category' element={<Category />} />
+                        <Route path="/shop" element={<Shop />} />
+                        <Route path="/services" element={<Services />} />
                         <Route path='/cart' element={<Cart />} />
                         <Route path='/orders' element={<Orders />} />
                         <Route path='/account' element={<Account />} />
                         <Route path='/contact' element={<Contact />} />
                         <Route path='/about' element={<About />} />
-                        <Route path='/logout' element={<Logout />} />
                     </Routes>
                 </div>
                 {/*Home*/}

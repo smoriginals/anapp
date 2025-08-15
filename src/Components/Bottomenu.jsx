@@ -8,23 +8,23 @@ import '../index.css'; // Assuming you have a global CSS file for styles'
 export default function Bottomenu({isToggled}) {
     return (
         <>
-            <div className={`fixed bottom-0 left-0 z-50 ${isToggled?'rounded-b-xl':'rounded-none'} flex h-16 w-full items-center justify-between bg-gray-800 px-2`}>
+            <div className={`fixed bottom-0 left-0 z-50 ${isToggled?'rounded-b-xl':'rounded-none'} flex h-14 w-full items-center justify-between bg-gray-800 px-2`}>
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
-                    <AiFillHome className='anime rounded-full  text-2xl text-gray-500 hover:text-cyan-500' />
+                    <AiFillHome className='anime rounded-full  text-xl text-gray-500 hover:text-cyan-500' />
                 </div>
                     
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
-                    <FaHeart className='anime rounded-full  text-2xl text-gray-500 hover:text-cyan-500' />
+                    <FaHeart className='anime rounded-full  text-xl text-gray-500 hover:text-cyan-500' />
                 </div>
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
-                    <LuLoaderPinwheel className='anime text-8xl text-orange-500 hover:text-cyan-500' />
+                    <LuLoaderPinwheel className='anime text-4xl text-orange-500 hover:text-cyan-500' />
                 </div>
 
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
-                    <IoCartOutline className='anime rounded-full  text-2xl text-gray-500 hover:text-cyan-500' />
+                    <IoCartOutline className='anime rounded-full  text-xl text-gray-500 hover:text-cyan-500' />
                 </div>
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
-                    <FaUser className='anime rounded-full  text-2xl text-gray-500 hover:text-cyan-500' />
+                    <FaUser className='anime rounded-full  text-xl text-gray-500 hover:text-cyan-500' />
                 </div>
             </div>
         </>
