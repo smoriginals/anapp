@@ -8,7 +8,8 @@ import '../index.css'; // Assuming you have a global CSS file for styles'
 export default function Bottomenu({isToggled}) {
     return (
         <>
-            <div className={`fixed bottom-0 left-0 z-50 ${isToggled?'rounded-b-xl':'rounded-none'} flex h-14 w-full items-center justify-between bg-gray-800 px-2`}>
+            {/* Use either fixed or sticky,own choice */  }
+            <div className={`sticky bottom-0 left-0 z-50 ${isToggled?'rounded-b-xl':'rounded-none'} flex h-14 w-full items-center justify-between bg-gray-800 px-2`}>
                 <div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>
                     <AiFillHome className='anime rounded-full  text-xl text-gray-500 hover:text-cyan-500' />
                 </div>
