@@ -3,7 +3,7 @@ import a from '../assets/a.jpeg';
 import { FaHeart } from 'react-icons/fa';
 
 
-export default function ItemCard() {
+export default function ItemCard(props) {
     return (
         <>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -22,9 +22,9 @@ export default function ItemCard() {
 
                 {/* Title */}
                 <div className="p-2">
-                    <h2 className="text-lg font-semibold mb-1">Card Title</h2>
+                    <h2 className="text-md font-semibold mb-1">{props.title}</h2>
                     <p className="text-gray-600 text-sm">
-                        This is a short description for the card.
+                        {props.desc}
                     </p>
                 </div>
             </div>

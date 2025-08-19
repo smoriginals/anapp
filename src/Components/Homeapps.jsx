@@ -6,8 +6,13 @@ import '../index.css';
 import Offer from '../Pages/Offer';
 import SignIn from './SignIn';
 import Footer from './Footer';
-
+import Weading from '../Pages/Weading';
+import Festive from '../Pages/Festive';
+import Party from '../Pages/Party';
+import Birthday from '../Pages/Birthday';
+import Office from '../Pages/Office';
 export default function Homeapps() {
+
     return (
         <>
             <div>
@@ -16,32 +21,32 @@ export default function Homeapps() {
             <div className="bg-gray-100 px-2">
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-2 py-1">
                    
-                    <ItemCard />
-                    <ItemCard />
-                    <ItemCard />
-                    <ItemCard />
+                    <ItemCard title={'Red Rose'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Joe'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Raven'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Dannis'} desc={'This is a short description for the card.'} />
                     
                     
                 </div>
             </div>
             <div className='bg-white pt-1'>
-                <MiniHeroBar />
+                <Birthday delay={3000} duration={ 0.5} />
             </div>
             <div className='bg-white '>
-                <MiniHeroBar />
+                <Weading delay={6200} duration={0.5}/>
             </div>
             <div className='bg-white '>
-                <MiniHeroBar />
+                <Festive  delay={5700} duration={0.5}/>
             </div>
             <div className='bg-white '>
-                <MiniHeroBar />
+                <Party  delay={4400} duration={0.5}/>
             </div>
             <div className='bg-white '>
-                <MiniHeroBar />
+                <Office  delay={7500} duration={0.5}/>
             </div>
 
             <div className='bg-white '>
-                <Offer />
+                <Offer  delay={8800} duration={0.5}/>
             </div>
 
             <div className='bg-white '>
