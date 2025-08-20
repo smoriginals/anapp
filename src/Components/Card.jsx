@@ -84,7 +84,7 @@ export default function Card() {
 
         <>
             {/*Slidebar comes from left*/}
-            <SideBar show={slideRight} />
+            <SideBar show={slideRight} onlinkClick={ ()=>setSlideRight(false)} />
             {/*Slidebar comes from left*/}
 
             {/* Loading Bar at top */}

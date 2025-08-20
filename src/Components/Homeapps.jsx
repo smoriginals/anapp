@@ -22,9 +22,9 @@ export default function Homeapps() {
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-2 py-1">
                    
                     <ItemCard title={'Red Rose'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Joe'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Raven'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Dannis'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Lavender'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Sunflower'} desc={'This is a short description for the card.'} />
+                    <ItemCard title={'Lotus'} desc={'This is a short description for the card.'} />
                     
                     
                 </div>

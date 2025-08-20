@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function SideBar({ show }) {
+export default function SideBar({ show,onlinkClick }) {
 
     const links = [
         {name:'Home',path:'/'},
@@ -31,7 +31,7 @@ export default function SideBar({ show }) {
                     <div className='h-4/5 w-3/5 md:w-1/5  rounded-r-xl bg-red-200 py-4'>
                         <div className='grid grid-cols-1 gap-4 p-4'>
                             {links.map((link, index) => (
-                                <Link key={link.name} to={link.path}>
+                                <Link key={link.name} to={link.path} onClick={onlinkClick}>
                                     <motion.div
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
@@ -41,6 +41,7 @@ export default function SideBar({ show }) {
                                         {link.name}
                                     </motion.div>
                                 </Link>
+
                             ))}
                         </div>
                     </div>

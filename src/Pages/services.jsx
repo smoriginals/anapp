@@ -1,10 +1,20 @@
 import React from 'react';
-
+import ServicesCard from '../Components/ServicesCard';
 export default function Services() {
     return (
         <>
-            <div className='flex justify-center items-center h-dvh w-dvw bg-gray-800 text-white'>
-                ALEX
+            <div>
+                <div className='h-full w-full bg-red-300 pt-2 px-4'>
+                    <p className='text-center text-3xl font-bold'>OUR SERVICE'S</p>
+                </div>
+                <div className='h-full w-full bg-cyan-500 py-8'>
+                    <ServicesCard />
+                    <ServicesCard />
+                    <ServicesCard />
+                    <ServicesCard />
+                    <ServicesCard />
+                    <ServicesCard />
+                </div>
             </div>
         </>
     )
