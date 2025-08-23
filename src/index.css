@@ -1,4 +1,4 @@
-/*@import 'tailwindcss/base';*/
+﻿/*@import 'tailwindcss/base';*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +9,7 @@
 }
 
 .slide-left {
-    @apply translate-x-0 scale-100 rounded-none ;
+    @apply translate-x-0 scale-100 rounded-none;
 }
 .anime {
     @apply transition-all duration-300 ease-in-out;

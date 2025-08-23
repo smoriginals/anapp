@@ -1,9 +1,9 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function Contact() {
     return (
         <>
-            <div className='flex justify-center items-center h-screen w-full bg-blue-600'>
+            <div className='flex h-screen w-full items-center justify-center bg-blue-600'>
                 ALEX
             </div>
         </>

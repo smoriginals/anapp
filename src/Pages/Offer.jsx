@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import img1 from "../assets/a1.png";
@@ -19,14 +19,14 @@ export default function Offer({ delay, duration }) {
 
     return (
         <>
-            <div className='bg-red p-1 h-96 w-full flex flex-nowrap justify-center items-center'>
-                <div className='bg-white h-full w-full flex justify-center items-center overflow-hidden relative shadow-lg'>
+            <div className='bg-red flex h-96 w-full flex-nowrap items-center justify-center p-1'>
+                <div className='relative flex h-full w-full items-center justify-center overflow-hidden bg-white shadow-lg'>
                     <AnimatePresence mode="wait">
                         <motion.img
                             key={offerIndex}
                             src={OfferImages[offerIndex]}
                             alt="slideshow"
-                            className="absolute top-0 left-0 w-full h-full object-cover rounded-sm"
+                            className="absolute left-0 top-0 h-full w-full rounded-sm object-cover"
                             initial={{ y: "-100%", opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: "100%", opacity: 0 }}
@@ -38,5 +38,5 @@ export default function Offer({ delay, duration }) {
         </>
     );
 }
-//<div className="bg-red p-1 h-1/5 w-full flex flex-nowrap justify-center items-center">
-    {/*<div className="bg-white rounded-sm h-32 w-full relative overflow-hidden shadow-lg">*/}
+//<div className="bg-red flex h-1/5 w-full flex-nowrap items-center justify-center p-1">
+    {/*<div className="relative h-32 w-full overflow-hidden rounded-sm bg-white shadow-lg">*/}

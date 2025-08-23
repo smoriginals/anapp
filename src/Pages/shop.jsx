@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import a from '../assets/a.jpeg';
 import b from '../assets/b.jpeg';
 import c from '../assets/c.jpeg';
@@ -21,8 +21,8 @@ export default function Shop() {
     return (
         <>
 
-            <div className="bg-gray-100 px-2 relative top-2 left-0">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-2 py-1 pb-5 overflow-y-auto">
+            <div className="relative left-0 top-2 bg-gray-100 px-2">
+                <div className="grid grid-cols-2 gap-2 overflow-y-auto py-1 pb-5 md:grid-cols-5">
                     {/* your ItemCards */}
                     <ItemCard title={'Top Rated'} desc={'Best reviewed by our customers'} />
                     <ItemCard title={'Most Popular'} desc={'All-time favorite plants'} />

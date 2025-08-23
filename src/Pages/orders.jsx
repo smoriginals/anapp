@@ -1,9 +1,9 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function Orders() {
     return (
         <>
-            <div className='flex justify-center items-center h-dvh w-dvw bg-yellow-800 text-white'>
+            <div className='flex h-dvh w-dvw items-center justify-center bg-yellow-800 text-white'>
                 ALEX
             </div>
         </>

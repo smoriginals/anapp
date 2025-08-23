@@ -25,10 +25,10 @@ export default function SideBar({ show,onlinkClick }) {
                     exit={{ x: '-100%' }}
                     transition={{ duration: 0.3 }}
 
-                    className='fixed h-dvh w-dvw flex justify-start items-center bg-white z-0'
+                    className='fixed z-0 flex h-dvh w-dvw items-center justify-start bg-white'
                 >
                     {/* Links Container */}
-                    <div className='h-4/5 w-3/5 md:w-1/5  rounded-r-xl bg-red-200 py-4'>
+                    <div className='h-4/5 w-3/5 rounded-r-xl bg-red-200 py-4 md:w-1/5'>
                         <div className='grid grid-cols-1 gap-4 p-4'>
                             {links.map((link, index) => (
                                 <Link key={link.name} to={link.path} onClick={onlinkClick}>

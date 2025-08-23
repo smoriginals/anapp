@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsChevronLeft } from 'react-icons/bs';
 import { BsChevronRight } from 'react-icons/bs';
@@ -34,15 +34,15 @@ export default function HeroBar() {
     };
 
     return (
-        <div className="bg-gray-100 p-1 shadow-2xl h-2/5 w-full flex justify-center items-center mt-2">
-            <div className="relative rounded-sm h-52 w-full overflow-hidden shadow-lg">
+        <div className="mt-2 flex h-2/5 w-full items-center justify-center bg-gray-100 p-1 shadow-2xl">
+            <div className="relative h-52 w-full overflow-hidden rounded-sm shadow-lg">
                 {/* IMAGE SLIDES */}
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={index}
                         src={myImages[index]}
                         alt="slideshow"
-                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        className="absolute left-0 top-0 h-full w-full object-cover"
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: "-100%", opacity: 0 }}
@@ -63,19 +63,19 @@ export default function HeroBar() {
                 {/* CONTROLS */}
                 <button
                     onClick={handlePrev}
-                    className="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-40 text-white px-2 py-1 rounded-full hover:bg-opacity-60"
+                    className="-translate-y-1/2 absolute left-2 top-1/2 rounded-full bg-black bg-opacity-40 px-2 py-1 text-white hover:bg-opacity-60"
                 >
                     <BsChevronLeft/>
                 </button>
                 <button
                     onClick={handleNext}
-                    className="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-40 text-white px-2 py-1 rounded-full hover:bg-opacity-60"
+                    className="-translate-y-1/2 absolute right-2 top-1/2 rounded-full bg-black bg-opacity-40 px-2 py-1 text-white hover:bg-opacity-60"
                 >
                     <BsChevronRight />
                 </button>
 
                 {/* DOTS INDICATOR */}
-                <div className="absolute bottom-2 w-full flex justify-center gap-2">
+                <div className="absolute bottom-2 flex w-full justify-center gap-2">
                     {myImages.map((_, i) => (
                         <div
                             key={i}

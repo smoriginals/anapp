@@ -100,7 +100,7 @@ export default function Card() {
 
 
                 {/*Homeapps*/}
-                <div className="h-full overflow-y-auto py-12 rounded-2xl bg-white"> {/* Padding to prevent overlap */}
+                <div className="h-full overflow-y-auto rounded-2xl bg-white py-12"> {/* Padding to prevent overlap */}
                     <Routes>
                         <Route path="/" element={<Homeapps />} />
                         <Route path="/shop" element={<Shop />} />

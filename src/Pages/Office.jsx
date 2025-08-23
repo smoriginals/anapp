@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import img1 from "../assets/a4.jpg";
@@ -18,14 +18,14 @@ export default function Office({ delay, duration }) {
     }, [delay,Images.length]);
 
     return (
-        <div className="bg-red p-1 h-1/5 w-full flex flex-nowrap justify-center items-center">
-            <div className="bg-white rounded-sm h-32 w-full relative overflow-hidden shadow-lg">
+        <div className="bg-red flex h-1/5 w-full flex-nowrap items-center justify-center p-1">
+            <div className="relative h-32 w-full overflow-hidden rounded-sm bg-white shadow-lg">
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={myIndex}
                         src={Images[myIndex]}
                         alt="slideshow"
-                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        className="absolute left-0 top-0 h-full w-full object-cover"
                         initial={{ z: "100%", opacity: 0 }}
                         animate={{ z: 0, opacity: 1 }}
                         exit={{ z: "-100%", opacity: 0 }}
