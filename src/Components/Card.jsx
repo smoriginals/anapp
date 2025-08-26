@@ -17,6 +17,9 @@ import Orders from '../Pages/orders';
 import Account from '../Pages/account';
 import Contact from '../Pages/contact';
 import About from '../Pages/about';
+import Signup from '../Pages/Signup';
+import Login from '../Pages/Login';
+import Productview from '../Pages/Productview';
 
 export default function Card() {
 
@@ -110,6 +113,9 @@ export default function Card() {
                         <Route path='/account' element={<Account />} />
                         <Route path='/contact' element={<Contact />} />
                         <Route path='/about' element={<About />} />
+                        <Route path='/signup' element={<Signup />} />
+                        <Route path='/login' element={<Login />} />
+                        <Route path='/productview' element={<Productview/>}/>
                     </Routes>
                 </div>
                 {/*Home*/}

@@ -12,12 +12,16 @@ export default function Birthday({delay,duration }) {
     const Images = [img1, img2, img3, img4, img5,img6];
     const [myIndex, setMyIndex] = useState(0);
 
+
     useEffect(() => {
         const interval = setInterval(() => {
             setMyIndex((prev) => (prev + 1) % Images.length);
         }, delay);
         return () => clearInterval(interval);
     }, [delay,Images.length]);
+
+    
+
 
     return (
         <div className="bg-red flex h-1/5 w-full flex-nowrap items-center justify-center p-1">
