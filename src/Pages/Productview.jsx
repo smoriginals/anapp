@@ -1,104 +1,117 @@
-﻿import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+﻿import React, { useState } from 'react';
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
+import img8 from "../assets/8.jpg";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg";
+import { FaMoneyCheckAlt } from 'react-icons/fa';
+import { BiSolidOffer } from 'react-icons/bi';
 
 export default function Productview() {
-    const { id } = useParams();
-    const navigate = useNavigate();
+    const myImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const [index, setIndex] = useState(0);
+    const [touchStartX, setTouchStartX] = useState(null);
 
-    // Sample Product Data (replace with API data later)
-    const products = [
-        {
-            id: "1",
-            name: "Wedding Stage Decor",
-            price: "₹15,000",
-            images: [
-                "https://images.unsplash.com/photo-1584622650111-993a426fbf0a",
-                "https://images.unsplash.com/photo-1604014238174-cc04a31cf4c4"
-            ],
-            description: "Elegant wedding stage setup with premium floral arrangements and lighting. Perfect for grand weddings with a royal touch.",
-            features: [
-                "Premium quality flowers",
-                "Customizable themes",
-                "Includes lighting and backdrop"
-            ]
-        },
-        {
-            id: "2",
-            name: "Birthday Party Setup",
-            price: "₹5,000",
-            images: [
-                "https://images.unsplash.com/photo-1569864358642-9d6e4840f67d",
-                "https://images.unsplash.com/photo-1603791452906-b8b18d2dbfa9"
-            ],
-            description: "Colorful decoration for birthdays with balloons, lights, and theme-based decor.",
-            features: [
-                "Theme-based decorations",
-                "Free cake table setup",
-                "Includes lighting"
-            ]
+    const handleNext = () => {
+        setIndex((prev) => (prev + 1) % myImages.length);
+    };
+
+    const handlePrev = () => {
+        setIndex((prev) => (prev - 1 + myImages.length) % myImages.length);
+    };
+
+    // Handle finger swipe
+    const handleTouchStart = (e) => {
+        setTouchStartX(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = (e) => {
+        if (touchStartX === null) return;
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+
+        if (diff > 50) {
+            handleNext(); // swipe left
+        } else if (diff < -50) {
+            handlePrev(); // swipe right
         }
-    ];
 
-    const product = products.find((p) => p.id === id);
-
-    if (!product) {
-        return (
-            <div className="min-h-screen flex items-center justify-center text-xl font-bold">
-                Product Not Found
-            </div>
-        );
-    }
+        setTouchStartX(null);
+    };
 
     return (
-        <div className="min-h-screen bg-gray-100 p-6">
-            {/* Back Button */}
-            <button
-                onClick={() => navigate(-1)}
-                className="mb-4 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+        <div className="py-2 px-2">
+            <p className="text-lg font-bold py-2">
+                Greenkin Lucky Bamboo Plant in Golden Metal Pot | Best Feng Shui Plant | Vastu Plants for Home | 2 Layer Bamboo Plant
+            </p>
+            <p className='pb-2'>
+                visit the store:{" "}
+                <a href="/" className="text-blue-600 text-sm">
+                    ALEX GARDEN
+                </a>
+            </p>
+
+            {/* Slider container */}
+            {/* Slider container */}
+            <div
+                className="h-96 w-full bg-green-500 rounded-sm shadow-md overflow-hidden relative"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
             >
-                ← Back
-            </button>
+                {/* Fixed offer icon */}
+                <BiSolidOffer className="h-14 w-14 absolute top-2 left-2 z-50 text-red-500 bg-white rounded-full shadow-xl p-2" />
 
-            {/* Product Section */}
-            <div className="flex flex-col md:flex-row gap-6">
-                {/* Left - Images */}
-                <div className="w-full md:w-1/2">
-                    <img
-                        src={product.images[0]}
-                        alt={product.name}
-                        className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-                    />
-                    <div className="flex gap-2 mt-3">
-                        {product.images.map((img, i) => (
-                            <img
-                                key={i}
-                                src={img}
-                                alt="preview"
-                                className="w-20 h-20 object-cover rounded-lg border"
-                            />
-                        ))}
-                    </div>
+                {/* Images wrapper */}
+                <div
+                    className="flex h-full w-full transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${index * 100}%)` }}
+                >
+                    {myImages.map((img, i) => (
+                        <img
+                            key={i}
+                            src={img}
+                            alt={`product-${i}`}
+                            className="h-full w-full object-cover flex-shrink-0"
+                        />
+                    ))}
                 </div>
+            </div>
 
-                {/* Right - Details */}
-                <div className="w-full md:w-1/2 flex flex-col">
-                    <h1 className="text-4xl font-bold">{product.name}</h1>
-                    <p className="text-orange-500 font-bold text-3xl my-4">{product.price}</p>
-                    <p className="text-gray-700 mb-4">{product.description}</p>
 
-                    <ul className="list-disc list-inside mb-4">
-                        {product.features.map((f, i) => (
-                            <li key={i}>{f}</li>
-                        ))}
-                    </ul>
-
-                    <button
-                        className="bg-orange-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-600 transition"
-                        onClick={() => alert(`Booked ${product.name}`)}
-                    >
-                        Book Now
-                    </button>
+            <div className='px-2'>
+                <p className='text-5xl py-2 text-red-500'>
+                    35%
+                    <span className='px-2 text-4xl text-black'>
+                        ₹36,000
+                    </span>
+                    <span className='px-1 text-xl text-red-400 line-through'>
+                        ₹55383.61
+                    </span>
+                </p>
+                <p>Inclusive of all taxes</p>
+                <div className='flex flex-row justify-start items-center gap-2'>
+                    <FaMoneyCheckAlt className='text-xl text-green-600' /><p>No Cost EMI Available, EMI Starts from ₹2345</p>
                 </div>
+                <a href='/' className='text-blue-400'>EMI Options</a>
+            </div>
+
+            <div className="border rounded-md p-3 bg-yellow-50">
+                <h2 className="font-semibold mb-1">Available Offers</h2>
+                <ul className="text-sm list-disc pl-5 space-y-1">
+                    <li>Bank Offer: 10% Instant Discount on SBI Credit Cards</li>
+                    <li>Buy 2 Get Extra 5% Off</li>
+                    <li>Partner Offer: Get GST Invoice & Save More</li>
+                </ul>
+            </div>
+
+            <div className=' bg-gray-50 flex flex-col justify-center items-center gap-2 py-2'>
+                <button className='bg-green-400 h-6 w-96 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Add to Cart</button>
+                <button className='bg-green-400 h-6 w-96 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Buy Now</button>
             </div>
         </div>
     );

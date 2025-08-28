@@ -1,7 +1,7 @@
 import React from "react";
 import sign from '../assets/6.jpg';
 import { AiFillGoogleSquare } from 'react-icons/ai';
-import { TbBrandFirebase } from 'react-icons/tb';
+import { FaGithubAlt } from 'react-icons/fa';
 export default function Signup() {
     return (
         <>
@@ -20,9 +20,9 @@ export default function Signup() {
                     </div>
                     <button className='bg-green-500 text-white font-bold px-16 py-2 rounded-full shadow-md'>Sign Up</button>
                     <h1 className='py-2 font-bold text-xl text-white'>Or</h1>
-                    <div className='flex flex-row justify-center items-center text-white'>
+                    <div className='flex flex-row justify-center items-center text-white gap-2'>
                         <AiFillGoogleSquare className='text-4xl' />
-                        <TbBrandFirebase className='text-4xl' />
+                        <FaGithubAlt className='text-4xl' />
                     </div>
                     <p className='py-2 text-white'>Already Have an account? <a href='/login' className='text-cyan-600 font-bold'>Login</a></p>
                 </div>
