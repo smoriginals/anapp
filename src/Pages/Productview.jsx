@@ -9,6 +9,7 @@ import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
 import img9 from "../assets/9.jpg";
 import img10 from "../assets/10.jpg";
+
 import { FaMoneyCheckAlt } from 'react-icons/fa';
 import { BiSolidOffer } from 'react-icons/bi';
 
@@ -64,7 +65,7 @@ export default function Productview() {
                 onTouchEnd={handleTouchEnd}
             >
                 {/* Fixed offer icon */}
-                <BiSolidOffer className="h-14 w-14 absolute top-2 left-2 z-50 text-red-500 bg-white rounded-full shadow-xl p-2" />
+                {/*<BiSolidOffer className="group h-14 w-14 absolute top-2 left-2 z-50 text-red-500 bg-white rounded-full shadow-xl p-2" />*/}
 
                 {/* Images wrapper */}
                 <div
@@ -72,12 +73,15 @@ export default function Productview() {
                     style={{ transform: `translateX(-${index * 100}%)` }}
                 >
                     {myImages.map((img, i) => (
-                        <img
-                            key={i}
-                            src={img}
-                            alt={`product-${i}`}
-                            className="h-full w-full object-cover flex-shrink-0"
-                        />
+                        <div key={i} className="h-full w-full relative flex-shrink-0">
+                            {/* Offer icon inside each image */}
+                            <BiSolidOffer className="h-14 w-14 absolute top-2 left-2 z-10 text-red-500 bg-white rounded-full shadow-xl p-2" />
+                            <img
+                                src={img}
+                                alt={`product-${i}`}
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
@@ -95,7 +99,7 @@ export default function Productview() {
                 </p>
                 <p>Inclusive of all taxes</p>
                 <div className='flex flex-row justify-start items-center gap-2'>
-                    <FaMoneyCheckAlt className='text-xl text-green-600' /><p>No Cost EMI Available, EMI Starts from ₹2345</p>
+                    <FaMoneyCheckAlt className='text-md text-green-600' /><p className='text-sm'>No Cost EMI Available, EMI Starts from ₹2345</p>
                 </div>
                 <a href='/' className='text-blue-400'>EMI Options</a>
             </div>
@@ -109,9 +113,9 @@ export default function Productview() {
                 </ul>
             </div>
 
-            <div className=' bg-gray-50 flex flex-col justify-center items-center gap-2 py-2'>
-                <button className='bg-green-400 h-6 w-96 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Add to Cart</button>
-                <button className='bg-green-400 h-6 w-96 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Buy Now</button>
+            <div className=' flex flex-row justify-center items-center gap-2 px-2 py-2'>
+                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Add to Cart</button>
+                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Buy Now</button>
             </div>
         </div>
     );
