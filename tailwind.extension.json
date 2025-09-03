@@ -1,10 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/theron-wang/VS2022-Editor-Support-for-Tailwind-CSS/refs/heads/main/tailwind.extension.schema.json",
-  "ConfigurationFiles": [
-    {
-      "Path": "..\\tailwind-cf4c15c8.css"
-    }
-  ],
   "BuildFiles": [
     {
       "Input": "src\\index.css",
@@ -23,6 +18,11 @@
     },
     {
       "Input": "..\\tailwind-f20ce861.css",
+      "Output": "",
+      "Behavior": "Default"
+    },
+    {
+      "Input": "..\\tailwind-cf4c15c8.css",
       "Output": "",
       "Behavior": "Default"
     }

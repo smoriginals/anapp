@@ -9,13 +9,23 @@ import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
 import img9 from "../assets/9.jpg";
 import img10 from "../assets/10.jpg";
-
+import { useParams,useNavigate } from 'react-router-dom';
 import { FaMoneyCheckAlt } from 'react-icons/fa';
 import { BiSolidOffer } from 'react-icons/bi';
+import ReviewCard from '../Components/ReviewCard';
 
 export default function Productview() {
+    let navigate = useNavigate();
+    const { id } = useParams(); // 👈 get product id from URL
+
     const myImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
-    const [index, setIndex] = useState(0);
+
+    // 👇 Use product id to pick image safely
+    const productIndex = Number(id) - 1; // if url is /product/1 → index 0
+    const defaultIndex = productIndex >= 0 && productIndex < myImages.length ? productIndex : 0;
+
+
+    const [index, setIndex] = useState(defaultIndex);
     const [touchStartX, setTouchStartX] = useState(null);
 
     const handleNext = () => {
@@ -47,6 +57,9 @@ export default function Productview() {
 
     return (
         <div className="py-2 px-2">
+            {/* 👇 Example of showing which product is open */}
+            <p className="text-sm text-gray-500">Product ID: {id}</p> 
+
             <p className="text-lg font-bold py-2">
                 Greenkin Lucky Bamboo Plant in Golden Metal Pot | Best Feng Shui Plant | Vastu Plants for Home | 2 Layer Bamboo Plant
             </p>
@@ -115,7 +128,10 @@ export default function Productview() {
 
             <div className=' flex flex-row justify-center items-center gap-2 px-2 py-2'>
                 <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Add to Cart</button>
-                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Buy Now</button>
+                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center' onClick={() => {navigate('/checkout')}}>Buy Now</button>
+            </div>
+            <div className=' flex flex-row justify-center items-center gap-2 px-2 py-2'>
+               <ReviewCard />
             </div>
         </div>
     );

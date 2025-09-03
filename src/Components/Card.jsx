@@ -21,6 +21,7 @@ import Signup from '../Pages/Signup';
 import Login from '../Pages/Login';
 import Productview from '../Pages/Productview';
 import Checkout from '../Pages/Checkout';
+import NotFound from '../Pages/NotFound';
 
 export default function Card() {
 
@@ -116,8 +117,9 @@ export default function Card() {
                         <Route path='/about' element={<About />} />
                         <Route path='/signup' element={<Signup />} />
                         <Route path='/login' element={<Login />} />
-                        <Route path='/productview' element={<Productview />} />
+                        <Route path='/product/:id' element={<Productview />} />
                         <Route path='/checkout' element={<Checkout />} />
+                        <Route path='*' element={<NotFound />} />
                     </Routes>
                 </div>
                 {/*Home*/}

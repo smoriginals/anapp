@@ -13,19 +13,37 @@ import Birthday from '../Pages/Birthday';
 import Office from '../Pages/Office';
 export default function Homeapps() {
 
+
+    const items = [
+        { _id: "1", title: "Red Rose", description: "This is a short description for the card." },
+        { _id: "2", title: "Lavender", description: "This is a short description for the card." },
+        { _id: "3", title: "Sunflower", description: "This is a short description for the card." },
+        { _id: "4", title: "Lotus", description: "This is a short description for the card." },
+        { _id: "5", title: "Lotus", description: "This is a short description for the card." },
+        { _id: "6", title: "Lotus", description: "This is a short description for the card." },
+    ];
+
     return (
         <>
             <div>
                 <HeroBar/>
             </div>
             <div className="bg-gray-100 px-2">
-                <div className="grid grid-cols-2 gap-2 py-1 md:grid-cols-5">
+                <div className="grid grid-cols-2 gap-2 py-1 md:grid-cols-6">
                    
-                    <ItemCard title={'Red Rose'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Lavender'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Sunflower'} desc={'This is a short description for the card.'} />
-                    <ItemCard title={'Lotus'} desc={'This is a short description for the card.'} />
-                    
+                    {/*<ItemCard title={'Red Rose'} desc={'This is a short description for the card.'} />*/}
+                    {/*<ItemCard title={'Lavender'} desc={'This is a short description for the card.'} />*/}
+                    {/*<ItemCard title={'Sunflower'} desc={'This is a short description for the card.'} />*/}
+                    {/*<ItemCard title={'Lotus'} desc={'This is a short description for the card.'} />*/}
+
+                    {items.map((item) => (
+                        <ItemCard
+                            key={item._id}
+                            id={item._id}   // 👈 important for like button later
+                            title={item.title}
+                            description={item.description}
+                        />
+                    ))}
                     
                 </div>
             </div>

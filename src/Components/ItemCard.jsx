@@ -1,33 +1,46 @@
 ﻿import React from 'react';
 import a from '../assets/a.jpeg';
 import { FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+export default function ItemCard({ id, title, description }) {
 
 
-export default function ItemCard(props) {
+    function HandleWishlist(e) {
+        e.stopPropagation(); // Prevent card click
+        e.preventDefault(); // Prevent navigation
+        console.log("Liked item:", id)  /*Later this use to connect with backend*/
+    }
+
     return (
         <>
-            <div className="overflow-hidden rounded-lg bg-white shadow-md">
-                {/* Image container with fixed height */}
-                <div className="relative h-40 w-full">
-                    <img
-                        src={a}
-                        alt="Card Image"
-                        className="h-full w-full object-contain shadow-md"
-                    />
-                    {/* Like Button */}
-                    <button className="absolute right-1 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 shadow-lg">
-                        <FaHeart className="text-lg text-red-500" />
-                    </button>
-                </div>
+            <Link to={`/product/${id}`}>  {/* 👈 clicking the card opens product view */}
 
-                {/* Title */}
-                <div className="p-2">
-                    <h2 className="text-md mb-1 font-semibold">{props.title}</h2>
-                    <p className="text-sm text-gray-600">
-                        {props.desc}
-                    </p>
+                <div className="overflow-hidden rounded-lg bg-white shadow-md cursor-pointer">
+                    {/* Image container with fixed height */}
+                    <div className="relative h-40 w-full">
+                        <img
+                            src={a}
+                            alt="Card Image"
+                            className="h-full w-full object-contain shadow-md"
+                        />
+                        {/* Like Button */}
+                        <button className="absolute right-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200"
+                            onClick={HandleWishlist}  /*Later this use to connect with backend*/
+                        >
+
+                            <FaHeart className="text-sm text-red-500" />
+                        </button>
+                    </div>
+
+                    {/* Title */}
+                    <div className="p-2">
+                        <h2 className="text-md mb-1 font-semibold">{title}</h2>
+                        <p className="text-sm text-gray-600">
+                            {description}
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }
