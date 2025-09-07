@@ -126,9 +126,9 @@ export default function Productview() {
                 </ul>
             </div>
 
-            <div className=' flex flex-row justify-center items-center gap-2 px-2 py-2'>
-                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center'>Add to Cart</button>
-                <button className='bg-green-400 h-6 w-60 rounded-full border-2 border-black py-5 text-xl flex justify-center items-center' onClick={() => {navigate('/checkout')}}>Buy Now</button>
+            <div className=' flex flex-col justify-center items-center gap-3 px-2 py-2'>
+                <button className='bg-green-500 h-6 w-full rounded-full py-6 text-xl flex justify-center items-center font-medium text-white' onClick={() => { navigate('/cart') }}>Add to Cart</button>
+                <button className='bg-orange-500 h-6 w-full rounded-full py-6 text-xl flex justify-center items-center font-medium text-white' onClick={() => {navigate('/checkout')}}>Buy Now</button>
             </div>
             <div className=' flex flex-row justify-center items-center gap-2 px-2 py-2'>
                <ReviewCard />

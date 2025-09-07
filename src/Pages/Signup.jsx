@@ -2,6 +2,7 @@ import React from "react";
 import sign from '../assets/6.jpg';
 import { AiFillGoogleSquare } from 'react-icons/ai';
 import { FaGithubAlt } from 'react-icons/fa';
+
 export default function Signup() {
     return (
         <>

@@ -7,7 +7,7 @@ export default function Account() {
     return (
         <>
             <div className='relative top-3 left-0 px-4 py-2 border-b-4 border-green-500'>
-                <h1 className='text-4xl font-bold'>ACCOUNT SETTINGS</h1>
+                <h1 className='text-2xl font-bold'>ACCOUNT SETTINGS</h1>
             </div>
 
             <div className='px-2 flex flex-col justify-center gap-4 pb-16'>

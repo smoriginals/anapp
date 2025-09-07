@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useNavigate } from 'react-router-dom';
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
@@ -8,7 +8,17 @@ import img4 from "../assets/4.jpg";
 import img5 from "../assets/5.jpg";
 
 export default function MiniHeroBar() {
-    const Images = [img1, img2, img3, img4, img5];
+    const navigate = useNavigate();
+
+    const Images = [
+        { img: img1, link: "/off/90" },
+        { img: img2, link: "/off/80" },
+        { img: img3, link: "/off/70" },
+        { img: img4, link: "/off/60" },
+        { img: img5, link: "/off/50" }
+    ];
+
+    //const Images = [img1, img2, img3, img4, img5];
     const [myIndex, setMyIndex] = useState(0);
 
     useEffect(() => {
@@ -24,13 +34,14 @@ export default function MiniHeroBar() {
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={myIndex}
-                        src={Images[myIndex]}
+                        src={Images[myIndex].img}
                         alt="slideshow"
                         className="absolute left-0 top-0 h-full w-full object-cover"
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: "-100%", opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
+                    onClick={() => navigate(Image[myIndex].link)}
                     />
                 </AnimatePresence>
             </div>

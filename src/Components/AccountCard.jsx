@@ -9,8 +9,8 @@ export default function AccountCard({ title, description, icon: Icon }) {
 
                 {/* CONTENT */}
                 <div className='flex flex-col justify-center'>
-                    <a href='/' className='text-2xl font-semibold'>{title}</a>
-                    <a href='/' className='text-gray-500 text-lg'>{description}</a>
+                    <a href='/' className='text-xl font-semibold'>{title}</a>
+                    <a href='/' className='text-gray-500 text-md'>{description}</a>
                 </div>
             </div>
         </>

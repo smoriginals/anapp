@@ -2,6 +2,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { BsChevronLeft } from 'react-icons/bs';
 import { BsChevronRight } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
@@ -14,7 +16,23 @@ import img9 from "../assets/9.jpg";
 import img10 from "../assets/10.jpg";
 
 export default function HeroBar() {
-    const myImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+
+    const navigate = useNavigate();
+
+    //const myImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const myImages = [
+        { img: img1, link: "/off/90" },
+        { img: img2, link: "/off/80" },
+        { img: img3, link: "/off/70" },
+        { img: img4, link: "/off/60" },
+        { img: img5, link: "/off/50" },
+        { img: img6, link: "/off/40" },
+        { img: img7, link: "/off/30" },
+        { img: img8, link: "/off/20" },
+        { img: img9, link: "/off/10" },
+        { img: img10, link: "/off/special" }
+    ];
+
     const [index, setIndex] = useState(0);
 
     // auto-slide effect
@@ -40,7 +58,7 @@ export default function HeroBar() {
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={index}
-                        src={myImages[index]}
+                        src={myImages[index].img}
                         alt="slideshow"
                         className="absolute left-0 top-0 h-full w-full object-cover"
                         initial={{ x: "100%", opacity: 0 }}
@@ -50,13 +68,15 @@ export default function HeroBar() {
                         drag="x"
                         dragConstraints={{ left: 0, right: 0 }}
                         dragElastic={0.5}
-                        onDragEnd={(e, { offset, velocity=100 }) => {
+                        onDragEnd={(e, { offset, velocity = 100 }) => {
                             if (offset.x < -velocity) {
                                 handleNext();
                             } else if (offset.x > velocity) {
                                 handlePrev();
                             }
+
                         }}
+                        onClick={() => navigate(myImages[index].link)}
                     />
                 </AnimatePresence>
 
@@ -65,7 +85,8 @@ export default function HeroBar() {
                     onClick={handlePrev}
                     className="-translate-y-1/2 absolute left-2 top-1/2 rounded-full bg-black bg-opacity-40 px-2 py-1 text-white hover:bg-opacity-60"
                 >
-                    <BsChevronLeft/>
+                    <BsChevronLeft />
+
                 </button>
                 <button
                     onClick={handleNext}

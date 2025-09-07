@@ -22,6 +22,12 @@ import Login from '../Pages/Login';
 import Productview from '../Pages/Productview';
 import Checkout from '../Pages/Checkout';
 import NotFound from '../Pages/NotFound';
+import Wishlist from '../Pages/Wishlist';
+import UpdateProfile from '../Pages/UpdateProfile';
+import Profile from '../Pages/Profile';
+import Terms from '../Pages/Terms';
+import PrivacyPolicy from '../Pages/PrivacyPolicy';
+import OfferProducts from '../Pages/OfferProducts';
 
 export default function Card() {
 
@@ -89,7 +95,7 @@ export default function Card() {
 
         <>
             {/*Slidebar comes from left*/}
-            <SideBar show={slideRight} onlinkClick={ ()=>setSlideRight(false)} />
+            <SideBar show={slideRight} onlinkClick={() => setSlideRight(false)} />
             {/*Slidebar comes from left*/}
 
             {/* Loading Bar at top */}
@@ -100,7 +106,7 @@ export default function Card() {
             <div className={`fixed top-0 h-dvh w-dvw ${slideRight ? 'slide-right shadow-2xl' : 'slide-left shadow-none'} transition-all duration-300 ease-in-out z-50`} id="main-container">
 
                 {/*Navbar*/}
-                <Navbar onLeftClick={HandleSlideRight} isToggled={slideRight} searchClick={slideRight } />
+                <Navbar onLeftClick={HandleSlideRight} isToggled={slideRight} searchClick={slideRight} />
                 {/*Navbar*/}
 
 
@@ -119,6 +125,14 @@ export default function Card() {
                         <Route path='/login' element={<Login />} />
                         <Route path='/product/:id' element={<Productview />} />
                         <Route path='/checkout' element={<Checkout />} />
+                        <Route path='/wishlist' element={<Wishlist />} />
+                        <Route path='/updatep' element={<UpdateProfile />} />
+                        <Route path='/profile' element={<Profile />} />
+                        <Route path='/terms' element={<Terms />} />
+                        <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+                        <Route path='/off/:id' element={<OfferProducts />} />
+
+
                         <Route path='*' element={<NotFound />} />
                     </Routes>
                 </div>
