@@ -103,7 +103,8 @@ export default function HeroBar() {
                             onClick={() => setIndex(i)}
                             className={`h-1 w-1 rounded-full cursor-pointer transition-all duration-300 ease ${index === i ? "bg-white scale-125" : "bg-gray-400"
                                 }`}
-                        ></div>
+                        >
+                        </div>
                     ))}
                 </div>
             </div>

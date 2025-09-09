@@ -26,7 +26,7 @@ import Wishlist from '../Pages/Wishlist';
 import UpdateProfile from '../Pages/UpdateProfile';
 import Profile from '../Pages/Profile';
 import Terms from '../Pages/Terms';
-import PrivacyPolicy from '../Pages/PrivacyPolicy';
+//import PrivacyPolicy from '../Pages/PrivacyPolicy';
 import OfferProducts from '../Pages/OfferProducts';
 
 export default function Card() {
@@ -129,7 +129,7 @@ export default function Card() {
                         <Route path='/updatep' element={<UpdateProfile />} />
                         <Route path='/profile' element={<Profile />} />
                         <Route path='/terms' element={<Terms />} />
-                        <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+                        {/*<Route path='/privacypolicy' element={<PrivacyPolicy />} />*/}
                         <Route path='/off/:id' element={<OfferProducts />} />
 
 
