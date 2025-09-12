@@ -2,14 +2,16 @@
 import a from '../assets/a.jpeg';
 import { FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 export default function ItemCard({ id, title, description }) {
 
-
+    
     function HandleWishlist(e) {
         e.stopPropagation(); // Prevent card click
         e.preventDefault(); // Prevent navigation
         console.log("Liked item:", id)  /*Later this use to connect with backend*/
     }
+   
 
     return (
         <>
@@ -37,6 +39,7 @@ export default function ItemCard({ id, title, description }) {
                         <h2 className="text-md mb-1 font-semibold">{title}</h2>
                         <p className="text-sm text-gray-600">
                             {description}
+
                         </p>
                     </div>
                 </div>

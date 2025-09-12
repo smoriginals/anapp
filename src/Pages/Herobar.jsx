@@ -1,14 +1,41 @@
 ﻿/* eslint-disable no-unused-vars */  
-import React, { useEffect } from "react";  
+import React, { useEffect ,useState} from "react";  
 import { useNavigate } from 'react-router-dom';  
-import { useHeroBar } from '../Contexts/Heroctx';
 import { motion, AnimatePresence } from "framer-motion";  
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';  
 
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
+import img8 from "../assets/8.jpg";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg"; 
+
+
 export default function HeroBar() {
 
+    const myImages = [
+        { img: img1, link: "/off/90" },
+        { img: img2, link: "/off/80" },
+        { img: img3, link: "/off/70" },
+        { img: img4, link: "/off/60" },
+        { img: img5, link: "/off/50" },
+        { img: img6, link: "/off/40" },
+        { img: img7, link: "/off/30" },
+        { img: img8, link: "/off/20" },
+        { img: img9, link: "/off/10" },
+        { img: img10, link: "/off/special" }
+    ];
+
     const navigate = useNavigate();
-    const { myImages, index, setIndex, handleNext, handlePrev } = useHeroBar();
+    const [index, setIndex] = useState(0);
+
+    const handleNext = () => setIndex((prev) => (prev + 1) % myImages.length);
+    const handlePrev = () => setIndex((prev) => (prev - 1 + myImages.length) % myImages.length);
 
     // auto-slide effect
     useEffect(() => {
@@ -16,7 +43,7 @@ export default function HeroBar() {
             handleNext();
         }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [index]);
 
     return (
         <div className="mt-2 flex h-2/5 w-full items-center justify-center bg-gray-100 p-1 shadow-2xl">
