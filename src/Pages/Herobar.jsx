@@ -14,6 +14,7 @@ import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
 import img9 from "../assets/9.jpg";
 import img10 from "../assets/10.jpg"; 
+import garden from '../assets/Garden.mp4';
 
 
 export default function HeroBar() {
