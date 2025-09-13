@@ -247,9 +247,9 @@ export default function HeroBar() {
                         Your browser does not support the video tag.
                     </video>
 
-                    {/* Overlay Content */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white text-center p-4">
-                        <h1 className="text-5xl font-bold mb-4">Welcome to Our Garden Sale</h1>
+                    Overlay Content
+                    {/* <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white text-center p-4">
+                        <h1 className="text-5xl font-bold mb-4">Welcome to ALEX GARDEN</h1>
                         <p className="text-xl">Special seasonal offers just for you!</p>
                         <button
                             onClick={() => navigate("/off/special")}
@@ -257,6 +257,36 @@ export default function HeroBar() {
                         >
                             Explore Now
                         </button>
+                    </div> */}
+                    {/* ✅ Animated Overlay Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white text-center p-4">
+                        <motion.h1
+                            className="text-5xl font-bold mb-4"
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                        >
+                            Welcome to ALEX GARDEN
+                        </motion.h1>
+
+                        <motion.p
+                            className="text-xl"
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                        >
+                            Special seasonal offers just for you!
+                        </motion.p>
+
+                        <motion.button
+                            onClick={() => navigate("/off/special")}
+                            className="mt-6 rounded bg-green-600 px-6 py-3 text-white hover:bg-green-700"
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+                        >
+                            Explore Now
+                        </motion.button>
                     </div>
                 </div>
             )}
