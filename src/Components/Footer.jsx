@@ -37,13 +37,6 @@ export default function Footer() {
                     <div className='my-2 flex flex-row items-center justify-evenly rounded-full border border-solid border-white px-4'>
                         <p className='text-md p-2 font-bold text-white'>Already have an account? SignUp</p>
                     </div>
-
-
-                    <div className='bg-red-500'>
-
-                    </div>
-
-
                 </div>
 
             </div>
