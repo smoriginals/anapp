@@ -34,8 +34,8 @@ export default function Birthday({ delay, duration }) {
 
 
     return (
-        <div className="bg-red flex h-1/5 w-full flex-nowrap items-center justify-center p-1">
-            <div className="relative h-32 w-full overflow-hidden rounded-sm bg-white shadow-lg">
+        <div className="bg-red flex h-1/5 md:h-96 w-full flex-nowrap items-center justify-center p-1">
+            <div className="relative h-96 w-full overflow-hidden rounded-sm bg-white shadow-lg bg-cover">
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={myIndex}
@@ -46,7 +46,7 @@ export default function Birthday({ delay, duration }) {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: "-100%", opacity: 0 }}
                         transition={{ duration, ease: "easeInOut" }}
-                        onClick={() => navigate(Images[myIndex].link)}
+                        onClick={() => navigate('/shop')}
                     />
                 </AnimatePresence>
             </div>

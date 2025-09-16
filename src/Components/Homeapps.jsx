@@ -1,27 +1,22 @@
 ﻿import React from 'react';
 import ItemCard from './ItemCard';
 import HeroBar from '../Pages/Herobar';
-import MiniHeroBar from './MiniHerobar';
 import '../index.css';
 import Offer from '../Pages/Offer';
 import SignIn from './SignIn';
 import Footer from './Footer';
-import Weading from '../Pages/Weading';
-import Festive from '../Pages/Festive';
-import Party from '../Pages/Party';
 import Birthday from '../Pages/Birthday';
-import Office from '../Pages/Office';
 import a from '../assets/a.jpeg';
 export default function Homeapps() {
 
 
     const items = [
-        { _id: "1", title: "Red Rose", description: "This is a short description for the card.",price:5000,image:a },
-        { _id: "2", title: "Lavender", description: "This is a short description for the card.",price:5000,image:a },
-        { _id: "3", title: "Sunflower", description: "This is a short description for the card.",price:5000,image:a },
-        { _id: "4", title: "Lotus", description: "This is a short description for the card.",price:5000,image:a },
-        { _id: "5", title: "Lotus", description: "This is a short description for the card.",price:5000,image:a },
-        { _id: "6", title: "Lotus", description: "This is a short description for the card.",price:5000,image:a },
+        { _id: "1", title: "Red Rose", description: "This is a short description for the card.",price:36000,image:a },
+        { _id: "2", title: "Lavender", description: "This is a short description for the card.",price:36000,image:a },
+        { _id: "3", title: "Sunflower", description: "This is a short description for the card.",price:36000,image:a },
+        { _id: "4", title: "Lotus", description: "This is a short description for the card.",price:36000,image:a },
+        { _id: "5", title: "Lotus", description: "This is a short description for the card.",price:36000,image:a },
+        { _id: "6", title: "Lotus", description: "This is a short description for the card.",price:36000,image:a },
     ];
 
     return (

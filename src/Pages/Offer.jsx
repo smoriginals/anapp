@@ -42,7 +42,7 @@ export default function Offer({ delay, duration }) {
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: "100%", opacity: 0 }}
                             transition={{ duration, ease: "easeInOut" }}
-                            onClick={() => navigate(OfferImages[offerIndex].link) }
+                            onClick={() => navigate('/shop') }
                         />
                     </AnimatePresence>
                 </div>
