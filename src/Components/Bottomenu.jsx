@@ -31,10 +31,7 @@ export default function Bottomenu({ isToggled }) {
                     <AiFillHome className='anime rounded-full text-xl text-gray-500 hover:text-cyan-500' onClick={() => { navigate('/') }} />
                 </div>
 
-                {/*<div className='flex h-[50px] w-[50px] flex-nowrap items-center justify-center rounded-full'>*/}
-                {/*    <FaHeart className='anime rounded-full text-xl text-gray-500 hover:text-cyan-500' onClick={() => { navigate('/wishlist') }} />*/}
-                {/*</div>*/}
-                {/* ❤️ Wishlist Icon with Animation */}
+
                 <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full">
                     <FaHeart
                         className={`rounded-full text-xl text-gray-500 hover:text-cyan-500 transition-transform duration-300 

@@ -21,7 +21,7 @@ import Profile from "./Pages/Profile";
 import Terms from "./Pages/Terms";
 import OfferProducts from "./Pages/OfferProducts";
 import NotFound from "./Pages/NotFound";
-
+//import PrivacyPolicy from './Pages/PrivacyPolicy';
 export default function App() {
     return (
         <div className="h-screen w-full overflow-hidden">
@@ -45,6 +45,7 @@ export default function App() {
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/off/:id" element={<OfferProducts />} />
                     <Route path="*" element={<NotFound />} />
+                    {/*<Route path="/policy" element={<PrivacyPolicy />} />*/}
                 </Routes>
             </Card>
         </div>

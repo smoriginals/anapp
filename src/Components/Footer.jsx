@@ -20,7 +20,7 @@ export default function Footer() {
                     </div>
                     <div className='items-ceter flex h-1/4 w-full flex-col justify-center gap-4 p-2 text-sm font-medium text-gray-200'>
                         <a href='/account'>My Account</a>
-                        <a href='/privacy-policy'>Privacy Policy</a>
+                        <a href='/policy'>Privacy Policy</a>
                         <a href='/terms'>Terms & Conditions</a>
                         <a href='/returnpolicy'>Return Policy</a>
                         <a href='/'>Contact Us</a>
