@@ -22,6 +22,10 @@ import Terms from "./Pages/Terms";
 import OfferProducts from "./Pages/OfferProducts";
 import NotFound from "./Pages/NotFound";
 import Dashboard from "./Pages/Dashboard";
+import AddFetchProducts from "./Pages/AddFetchProducts";
+
+
+
 //import PrivacyPolicy from './Pages/PrivacyPolicy';
 export default function App() {
     return (
@@ -46,6 +50,7 @@ export default function App() {
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/admin" element={<Dashboard />} />
                     <Route path="/off/:id" element={<OfferProducts />} />
+                    <Route path="/addstock" element={<AddFetchProducts/>}/>
                     <Route path="*" element={<NotFound />} />
                     {/*<Route path="/policy" element={<PrivacyPolicy />} />*/}
                 </Routes>

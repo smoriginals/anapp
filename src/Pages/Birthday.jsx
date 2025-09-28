@@ -34,7 +34,7 @@ export default function Birthday({ delay, duration }) {
 
 
     return (
-        <div className="bg-red flex h-1/5 md:h-96 w-full flex-nowrap items-center justify-center p-1">
+        <div className="bg-red flex h-1/5 md:h-96 w-full flex-nowrap items-center justify-center p-1 cursor-pointer">
             <div className="relative h-40 md:h-96 w-full overflow-hidden rounded-sm bg-white shadow-lg bg-cover">
                 <AnimatePresence mode="wait">
                     <motion.img

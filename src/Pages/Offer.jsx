@@ -30,7 +30,7 @@ export default function Offer({ delay, duration }) {
 
     return (
         <>
-            <div className='bg-red flex h-96 w-full flex-nowrap items-center justify-center p-1'>
+            <div className='bg-red flex h-96 w-full flex-nowrap items-center justify-center p-1 cursor-pointer'>
                 <div className='relative flex h-full w-full items-center justify-center overflow-hidden bg-white shadow-lg'>
                     <AnimatePresence mode="wait">
                         <motion.img
