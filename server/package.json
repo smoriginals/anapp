@@ -1,0 +1,23 @@
+{
+  "name": "alexgarden",
+  "version": "1.0.0",
+  "description": "my garden where you can buy plants and support the earth just like heaven",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "smoriginals",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "env": "^0.0.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "nodemon": "^3.1.10"
+  }
+}
