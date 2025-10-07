@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\admin",
-    "\\admin\\src\\assets",
-    "\\admin\\src\\pages"
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\Components"
   ],
-  "SelectedNode": "\\admin",
   "PreviewInSolutionExplorer": false
 }

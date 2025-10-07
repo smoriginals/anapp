@@ -3,6 +3,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Card from "./Components/Card";
 
+import Signup from "./admin/Signup";
+import Login from "./admin/Login";
+
 import Homeapps from "./Components/Homeapps";
 import Shop from "./Pages/shop";
 import Services from "./Pages/services";
@@ -11,8 +14,6 @@ import Orders from "./Pages/orders";
 import Account from "./Pages/account";
 import Contact from "./Pages/contact";
 import About from "./Pages/about";
-import Signup from "./Pages/Signup";
-import Login from "./Pages/Login";
 import Productview from "./Pages/Productview";
 import Checkout from "./Pages/Checkout";
 import Wishlist from "./Pages/Wishlist";
@@ -21,7 +22,7 @@ import Profile from "./Pages/Profile";
 import Terms from "./Pages/Terms";
 import OfferProducts from "./Pages/OfferProducts";
 import NotFound from "./Pages/NotFound";
-import Dashboard from "./Pages/Dashboard";
+import Dashboard from "./admin/Dashboard";
 import AddFetchProducts from "./Pages/AddFetchProducts";
 
 
@@ -50,7 +51,8 @@ export default function App() {
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/admin" element={<Dashboard />} />
                     <Route path="/off/:id" element={<OfferProducts />} />
-                    <Route path="/addstock" element={<AddFetchProducts/>}/>
+                    <Route path="/addstock" element={<AddFetchProducts />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="*" element={<NotFound />} />
                     {/*<Route path="/policy" element={<PrivacyPolicy />} />*/}
                 </Routes>
