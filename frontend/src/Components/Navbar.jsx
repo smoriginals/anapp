@@ -29,32 +29,34 @@
 //    )
 //}
 
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import SideBar from './Sidebar';
+import { HiMenuAlt2 } from 'react-icons/hi';
+import { FaRegUser } from 'react-icons/fa';
+
 export default function Navbar() {
+
+    const [slider, setSlider] = useState(false);
+
     return (
         <>
             <div className='h-16 w-full bg-red-500 flex justify-center items-center'>
                 <div className='bg-blue-500 h-12 w-full mx-2 flex justify-between items-center px-1'>
-                    <div>MenuBar</div>
-                    <div>Search Bar</div>
-                    <div>Account</div>
+
+                    <button onClick={() => setSlider(prev => !prev)}><HiMenuAlt2 className='text-2xl font-bold'/></button>
+
+                    <div><input type='search' placeholder='Search Here' className='w-full px-3 py-1 rounded-full font-medium  focus:outline-none ' /></div>
+                    {/*focus:ring-2 focus:ring-blue-500 focus:border-blue-500*/ }
+
+                    <button><FaRegUser className='text-2xl font-bold' /></button>
+
                 </div>
             </div>
 
-            <div className='h-full w-1/2 bg-green-600 absolute z-10 hidden flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out'>
-                
-                <Link to='/'>HOME</Link>  {/* Add Icons */}
-                <Link to='/'>CATEGORIES</Link>  {/* Add Icons */}
-                <Link to='/'>MY ORDERS</Link>  {/* Add Icons */}
-                <Link to='/'>CHOOSE LANGUAGE</Link>  {/* Add Icons */}
-                <Link to='/'>MY CART</Link>  {/* Add Icons */}
-                <Link to='/'>MY WISHLIST</Link>  {/* Add Icons */}
-                <Link to='/'>MY ACCOUNT</Link>  {/* Add Icons */}
-                <Link to='/'>HELP CENTER</Link>  {/* Add Icons */}
-                <Link to='/'>CONTACT US</Link>  {/* Add Icons */}
-                <Link to='/'>LOG OUT</Link>  {/* Add Icons */}
+            <div className={`h-full w-1/2 bg-green-600 absolute z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${slider?'-translate-x-0':'-translate-x-full'}`}> {/*-translate-x-0*/}
+                <SideBar />
             </div>
+
         </>
     )
 }

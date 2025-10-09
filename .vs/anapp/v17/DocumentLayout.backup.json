@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\acera\\Desktop\\anapp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\postcss.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\postcss.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\Components\\Sidebar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\admin\\Dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\admin\\Dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\tsconfig.app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -78,89 +82,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "postcss.config.js",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\postcss.config.js",
-              "RelativeDocumentMoniker": "frontend\\postcss.config.js",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\postcss.config.js",
-              "RelativeToolTip": "frontend\\postcss.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-07T16:47:21.194Z",
+              "DocumentIndex": 1,
+              "Title": "Sidebar.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Sidebar.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Components\\Sidebar.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Sidebar.jsx",
+              "RelativeToolTip": "frontend\\src\\Components\\Sidebar.jsx",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwEkAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-10-09T17:35:24.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "tailwind.config.js",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tailwind.config.js",
-              "RelativeDocumentMoniker": "frontend\\tailwind.config.js",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tailwind.config.js",
-              "RelativeToolTip": "frontend\\tailwind.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-07T16:46:45.503Z",
+              "DocumentIndex": 0,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Navbar.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\Components\\Navbar.jsx",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\Navbar.jsx",
+              "RelativeToolTip": "frontend\\src\\Components\\Navbar.jsx",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-10-07T18:23:45.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\vite.config.js",
-              "RelativeDocumentMoniker": "frontend\\vite.config.js",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\vite.config.js",
-              "RelativeToolTip": "frontend\\vite.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-07T16:29:01.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "tsconfig.app.json",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.app.json",
-              "RelativeDocumentMoniker": "frontend\\tsconfig.app.json",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.app.json",
-              "RelativeToolTip": "frontend\\tsconfig.app.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-07T16:28:59.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "tsconfig.json",
-              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.json",
-              "RelativeDocumentMoniker": "frontend\\tsconfig.json",
-              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\tsconfig.json",
-              "RelativeToolTip": "frontend\\tsconfig.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-07T16:28:57.48Z",
-              "EditorCaption": ""
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\index.css",
+              "RelativeDocumentMoniker": "frontend\\src\\index.css",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\index.css",
+              "RelativeToolTip": "frontend\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-07T17:56:35.551Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\App.css",
+              "RelativeDocumentMoniker": "frontend\\src\\App.css",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\App.css",
+              "RelativeToolTip": "frontend\\src\\App.css",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwCoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-07T17:56:13.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\index.html",
+              "RelativeDocumentMoniker": "frontend\\index.html",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\index.html",
+              "RelativeToolTip": "frontend\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-07T17:56:04.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Dashboard.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\admin\\Dashboard.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\admin\\Dashboard.jsx",
               "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\admin\\Dashboard.jsx",
               "RelativeToolTip": "frontend\\src\\admin\\Dashboard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-07T15:55:31.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T15:55:31.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\package.json",
+              "RelativeDocumentMoniker": "frontend\\package.json",
+              "ToolTip": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\package.json",
+              "RelativeToolTip": "frontend\\package.json",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-07T17:47:51.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Herobar.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Pages\\Herobar.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\Pages\\Herobar.jsx",
@@ -168,12 +180,11 @@
               "RelativeToolTip": "frontend\\src\\Pages\\Herobar.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T18:38:25.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T18:38:25.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Login.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\admin\\Login.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\admin\\Login.jsx",
@@ -181,12 +192,11 @@
               "RelativeToolTip": "frontend\\src\\admin\\Login.jsx",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwB4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T17:49:18.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T17:49:18.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\App.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\App.jsx",
@@ -194,12 +204,11 @@
               "RelativeToolTip": "frontend\\src\\App.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T17:48:12.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T17:48:12.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "account.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Pages\\account.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\Pages\\account.jsx",
@@ -207,12 +216,11 @@
               "RelativeToolTip": "frontend\\src\\Pages\\account.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T17:47:34.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T17:47:34.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AccountCard.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\Components\\AccountCard.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\Components\\AccountCard.jsx",
@@ -220,12 +228,11 @@
               "RelativeToolTip": "frontend\\src\\Components\\AccountCard.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T17:47:21.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T17:47:21.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Signup.jsx",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\frontend\\src\\admin\\Signup.jsx",
               "RelativeDocumentMoniker": "frontend\\src\\admin\\Signup.jsx",
@@ -233,12 +240,11 @@
               "RelativeToolTip": "frontend\\src\\admin\\Signup.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-06T17:47:01.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T17:47:01.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "eslint.config.js",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\eslint.config.js",
               "RelativeDocumentMoniker": "eslint.config.js",
@@ -249,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "nodemon.json",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\server\\nodemon.json",
               "RelativeDocumentMoniker": "server\\nodemon.json",
@@ -257,12 +263,11 @@
               "RelativeToolTip": "server\\nodemon.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-05T06:09:25.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T06:09:25.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\server\\package.json",
               "RelativeDocumentMoniker": "server\\package.json",
@@ -270,12 +275,11 @@
               "RelativeToolTip": "server\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-05T05:54:00.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T05:54:00.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\server\\index.js",
               "RelativeDocumentMoniker": "server\\index.js",
@@ -283,12 +287,11 @@
               "RelativeToolTip": "server\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-05T05:49:24.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T05:49:24.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "env",
               "DocumentMoniker": "C:\\Users\\acera\\Desktop\\anapp\\server\\env",
               "RelativeDocumentMoniker": "server\\env",
