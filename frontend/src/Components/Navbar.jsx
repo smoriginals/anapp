@@ -40,20 +40,21 @@ export default function Navbar() {
 
     return (
         <>
-            <div className='h-16 w-full bg-red-500 flex justify-center items-center'>
-                <div className='bg-blue-500 h-12 w-full mx-2 flex justify-between items-center px-1'>
+            <div className='h-14 w-full bg-green-500 flex justify-center items-center'>
+                <div className='h-12 w-full mx-2 flex justify-between items-center px-1'>
 
-                    <button onClick={() => setSlider(prev => !prev)}><HiMenuAlt2 className='text-2xl font-bold'/></button>
+                    <button onClick={() => setSlider(prev => !prev)}><HiMenuAlt2 className='text-white text-2xl font-bold focus:outline-none'/></button>
 
                     <div><input type='search' placeholder='Search Here' className='w-full px-3 py-1 rounded-full font-medium  focus:outline-none ' /></div>
                     {/*focus:ring-2 focus:ring-blue-500 focus:border-blue-500*/ }
 
-                    <button><FaRegUser className='text-2xl font-bold' /></button>
+                    <button><FaRegUser className='text-white text-2xl font-bold focus:outline-none' /></button>
 
                 </div>
             </div>
 
-            <div className={`h-full w-1/2 bg-green-600 absolute z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${slider?'-translate-x-0':'-translate-x-full'}`}> {/*-translate-x-0*/}
+            <div className={`h-full w-1/2 md:w-52 bg-green-600 absolute z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${slider ? '-translate-x-0' : '-translate-x-full'}`}>
+                {/*-translate-x-0*/}
                 <SideBar />
             </div>
 
