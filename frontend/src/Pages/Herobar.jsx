@@ -140,7 +140,7 @@ export default function HeroBar() {
                     {/* ✅ Animated Overlay Content */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white text-center p-4">
                         <motion.h1
-                            className="text-5xl font-bold mb-4"
+                            className="text-5xl font-bold select-none mb-4"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -149,7 +149,7 @@ export default function HeroBar() {
                         </motion.h1>
 
                         <motion.p
-                            className="text-xl"
+                            className="text-xl select-none"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
@@ -159,7 +159,7 @@ export default function HeroBar() {
 
                         <motion.button
                             onClick={() => navigate("/off/special")}
-                            className="mt-6 rounded bg-green-600 px-6 py-3 text-white hover:bg-green-700"
+                            className="mt-6 rounded bg-green-600 px-6 py-3 text-white select-none hover:bg-green-700"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 1, ease: "easeOut" }}

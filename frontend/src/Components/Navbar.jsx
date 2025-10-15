@@ -37,25 +37,36 @@ import { FaRegUser } from 'react-icons/fa';
 export default function Navbar() {
 
     const [slider, setSlider] = useState(false);
+    const toggleSidebar = () => setSlider((prev) => !prev);
+    const closeSidebar = () => setSlider(false);
+
+    const [rightSlider, setRightSlider] = useState(false);
+    const toggleRightSidebar = () => setRightSlider((prev) => !prev);
+    const closeRightSidebar = () => setRightSlider(false);
 
     return (
         <>
-            <div className='h-14 w-full bg-green-500 flex justify-center items-center'>
+            <div className='h-14 w-full bg-green-500 flex justify-center items-center shadow-xl'>
                 <div className='h-12 w-full mx-2 flex justify-between items-center px-1'>
 
-                    <button onClick={() => setSlider(prev => !prev)}><HiMenuAlt2 className='text-white text-2xl font-bold focus:outline-none'/></button>
+                    <button onClick={toggleSidebar}><HiMenuAlt2 className='text-white text-2xl font-bold focus:outline-none'/></button>
 
                     <div><input type='search' placeholder='Search Here' className='w-full px-3 py-1 rounded-full font-medium  focus:outline-none ' /></div>
                     {/*focus:ring-2 focus:ring-blue-500 focus:border-blue-500*/ }
 
-                    <button><FaRegUser className='text-white text-2xl font-bold focus:outline-none' /></button>
+                    <button onClick={toggleRightSidebar}><FaRegUser className='text-white text-2xl font-bold focus:outline-none' /></button>
 
                 </div>
             </div>
 
-            <div className={`h-full w-1/2 md:w-52 bg-green-600 absolute z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${slider ? '-translate-x-0' : '-translate-x-full'}`}>
+            <div className={`h-full w-1/2 md:w-52 bg-green-500 absolute z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${slider ? '-translate-x-0' : '-translate-x-full'}`}>
                 {/*-translate-x-0*/}
-                <SideBar />
+                <SideBar onLinkClick={closeSidebar} />
+            </div>
+
+            <div className={`h-1/3 w-1/2  bg-green-600 absolute right-0 z-10 flex flex-col justify-start items-start gap-4 px-2 py-4 text-md transition-all duration-300 ease-in-out ${rightSlider ? '-translate-x-0' : 'translate-x-full'}`}>
+                {/*-translate-x-0*/}
+                <SideBar onLinkClick={closeRightSidebar} />
             </div>
 
         </>
