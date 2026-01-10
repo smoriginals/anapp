@@ -2,7 +2,7 @@ import React from "react";
 import sign from '../assets/6.jpg';
 import { AiFillGoogleSquare } from 'react-icons/ai';
 import { FaGithubAlt } from 'react-icons/fa';
-
+import {Link } from 'react-router-dom'
 export default function Signup() {
     return (
         <>
@@ -25,7 +25,7 @@ export default function Signup() {
                         <AiFillGoogleSquare className='text-4xl' />
                         <FaGithubAlt className='text-4xl' />
                     </div>
-                    <p className='py-2 text-white'>Already Have an account? <a href='/login' className='text-cyan-600 font-bold'>Login</a></p>
+                    <p className='py-2 text-white'>Already Have an account? <Link to='/login' className='text-cyan-600 font-bold'>Login</Link></p>
                 </div>
 
                

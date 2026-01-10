@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\frontend",
-    "\\frontend\\public",
-    "\\frontend\\src",
-    "\\frontend\\src\\Components",
-    "\\frontend\\src\\Pages"
+    "\\frontend\\src"
   ],
-  "SelectedNode": "\\frontend\\src\\Components\\RightSidebar.jsx",
+  "SelectedNode": "\\frontend\\src\\main.jsx",
   "PreviewInSolutionExplorer": false
 }
